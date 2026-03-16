@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SAIBAY Construction & Management delivers premium construction, renovation, and project management services with precision, quality, and reliability."
+    />
+    <title>SAIBAY Construction & Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header" id="home">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="SAIBAY Construction & Management Home">
+          <img
+            src="pictures/SaibayLogo.jpg"
+            alt="SAIBAY Construction & Management logo"
+            class="brand-logo"
+          />
+          <span class="brand-text">
+            <strong>SAIBAY</strong>
+            <small>Construction & Management</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" aria-label="Hero section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Premium Construction Partner</p>
+          <h1>Building with Precision. Managing with Excellence.</h1>
+          <p class="hero-lead">
+            SAIBAY Construction & Management delivers dependable construction and professional project
+            leadership across residential and commercial work, combining disciplined planning with
+            high-quality execution from day one to final handover.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About SAIBAY</p>
+            <h2>Built on Structure, Reliability, and Detail</h2>
+            <p>
+              We approach every project with a management-first mindset: clear scope, disciplined
+              coordination, and consistent quality control. Our team focuses on safe operations,
+              transparent communication, and results that hold long-term value.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <article class="highlight-card">
+              <h3>Quality Craftsmanship</h3>
+              <p>
+                Precision execution and strict construction standards ensure durable, high-performing
+                outcomes on every job.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Trusted Project Management</h3>
+              <p>
+                Strong planning, timeline control, and proactive coordination keep teams aligned and
+                projects moving efficiently.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Timely Delivery</h3>
+              <p>
+                Through disciplined supervision and clear milestone tracking, we deliver dependable
+                completion timelines.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section section-alt" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Core Services</p>
+            <h2>Construction and Management Expertise</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">GC</div>
+              <h3>General Construction</h3>
+              <p>End-to-end construction delivery for new builds with rigorous quality and safety oversight.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">CM</div>
+              <h3>Construction Management</h3>
+              <p>Integrated planning, cost control, scheduling, and stakeholder coordination for smooth delivery.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">RR</div>
+              <h3>Renovation & Remodeling</h3>
+              <p>Modernization and upgrade projects that improve function, aesthetics, and long-term property value.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">RP</div>
+              <h3>Residential Projects</h3>
+              <p>Custom homes and multi-unit developments delivered with homeowner-focused quality standards.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">CP</div>
+              <h3>Commercial Projects</h3>
+              <p>Office, retail, and mixed-use construction solutions designed for operational efficiency and growth.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">SS</div>
+              <h3>Site Supervision</h3>
+              <p>Daily field supervision to maintain compliance, workmanship quality, and schedule accountability.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Projects That Demonstrate Capability</h2>
+            <p>Each portfolio set represents one SAIBAY project. Select any project card to open the full gallery.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-project="project1" tabindex="0">
+              <img src="pictures/project1/a1.jpg" alt="Project 1 featured construction progress image" />
+              <div class="project-content">
+                <h3>Project 01</h3>
+                <p>Residential build and site execution</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="project2" tabindex="0">
+              <img src="pictures/project2/b1.jpg" alt="Project 2 featured commercial construction image" />
+              <div class="project-content">
+                <h3>Project 02</h3>
+                <p>Commercial development package</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="project3" tabindex="0">
+              <img src="pictures/project3/c1.jpg" alt="Project 3 featured structural and finishing image" />
+              <div class="project-content">
+                <h3>Project 03</h3>
+                <p>Mixed-use structural and fit-out works</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="project4" tabindex="0">
+              <img src="pictures/project4/d1.jpg" alt="Project 4 featured site and management image" />
+              <div class="project-content">
+                <h3>Project 04</h3>
+                <p>Large-scale site coordination and delivery</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust / Company Stats -->
+      <section class="section stats" aria-label="Company trust metrics">
+        <div class="container stats-grid">
+          <article>
+            <h3>120+</h3>
+            <p>Projects Completed</p>
+          </article>
+          <article>
+            <h3>15+</h3>
+            <p>Years of Experience</p>
+          </article>
+          <article>
+            <h3>98%</h3>
+            <p>Client Satisfaction</p>
+          </article>
+          <article>
+            <h3>95%</h3>
+            <p>On-Time Delivery</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="section section-alt" id="team">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Our Team</p>
+            <h2>Experienced People Behind Every Build</h2>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <div class="avatar" aria-hidden="true">PM</div>
+              <h3>Ahmed Rahman</h3>
+              <p class="role">Project Manager</p>
+              <p>Leads project planning, sequencing, and stakeholder communication to ensure controlled delivery.</p>
+              <a href="mailto:project.manager@example.com">project.manager@example.com</a>
+            </article>
+
+            <article class="team-card">
+              <div class="avatar" aria-hidden="true">CS</div>
+              <h3>Lina Farouk</h3>
+              <p class="role">Construction Supervisor</p>
+              <p>Oversees field operations, safety procedures, and daily quality checks across active sites.</p>
+              <a href="mailto:construction.supervisor@example.com">construction.supervisor@example.com</a>
+            </article>
+
+            <article class="team-card">
+              <div class="avatar" aria-hidden="true">SE</div>
+              <h3>Omar Nasser</h3>
+              <p class="role">Site Engineer</p>
+              <p>Coordinates technical execution, drawings compliance, and on-site engineering decisions.</p>
+              <a href="mailto:site.engineer@example.com">site.engineer@example.com</a>
+            </article>
+
+            <article class="team-card">
+              <div class="avatar" aria-hidden="true">OC</div>
+              <h3>Maya Karim</h3>
+              <p class="role">Operations Coordinator</p>
+              <p>Manages procurement tracking, resource scheduling, and reporting to support on-time delivery.</p>
+              <a href="mailto:operations.coordinator@example.com">operations.coordinator@example.com</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Client Feedback</p>
+            <h2>Trusted by Property Owners and Developers</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <p>
+                "SAIBAY delivered our commercial project with excellent discipline and communication.
+                Their management process gave us full confidence from kickoff to handover."
+              </p>
+              <h3>R. Hamid</h3>
+              <span>Commercial Property Developer</span>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                "The team maintained quality at every phase and kept the schedule on track.
+                Their site supervision and attention to detail were outstanding."
+              </p>
+              <h3>S. Morgan</h3>
+              <span>Facility Owner Representative</span>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                "Professional, responsive, and highly organized. SAIBAY handled the renovation
+                with precision and delivered a finished result beyond expectations."
+              </p>
+              <h3>D. Khalil</h3>
+              <span>Private Client</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section section-alt" id="contact">
+        <div class="container contact-wrap">
+          <div>
+            <div class="section-heading left-align">
+              <p class="eyebrow">Contact</p>
+              <h2>Let's Discuss Your Next Project</h2>
+              <p>Placeholder contact details are provided below and can be replaced with official information.</p>
+            </div>
+
+            <div class="contact-details">
+              <p><strong>Phone:</strong> +1 (000) 000-0000 <span class="placeholder-note">(placeholder)</span></p>
+              <p><strong>Email:</strong> info@saibayconstruction.com <span class="placeholder-note">(placeholder)</span></p>
+              <p><strong>Address:</strong> 123 Business District, New York, NY <span class="placeholder-note">(placeholder)</span></p>
+            </div>
+
+            <div class="social-links" aria-label="Social media links">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+
+            <div class="map-frame" aria-label="Office map location">
+              <iframe
+                title="Google Map location placeholder"
+                src="https://www.google.com/maps?q=Manhattan%2C%20New%20York&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Send a Message</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary full-width">Submit Inquiry</button>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a class="footer-brand" href="#home">
+            <img src="pictures/SaibayLogo.jpg" alt="SAIBAY logo in footer" />
+            <span>SAIBAY Construction & Management</span>
+          </a>
+          <p>Structured execution. Trusted results.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>&copy; <span id="year"></span> SAIBAY Construction & Management. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Project Gallery Modal -->
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-label="Project gallery modal">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel">
+        <button class="modal-close" id="modalClose" aria-label="Close gallery">X</button>
+        <h3 id="modalTitle">Project Gallery</h3>
+        <div class="modal-main">
+          <button class="modal-nav" id="prevImage" aria-label="Previous image">&#10094;</button>
+          <img id="modalImage" src="" alt="Project gallery image" />
+          <button class="modal-nav" id="nextImage" aria-label="Next image">&#10095;</button>
+        </div>
+        <div class="modal-thumbs" id="modalThumbs"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -226,6 +226,37 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowLeft") showPreviousImage();
 });
 
+// Touch support for mobile swipe navigation
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleSwipe() {
+  const swipeThreshold = 50;
+  const diff = touchStartX - touchEndX;
+
+  if (Math.abs(diff) > swipeThreshold) {
+    if (diff > 0) {
+      showNextImage();
+    } else {
+      showPreviousImage();
+    }
+  }
+}
+
+projectModal.addEventListener("touchstart", (event) => {
+  touchStartX = event.changedTouches[0].screenX;
+});
+
+projectModal.addEventListener("touchend", (event) => {
+  touchEndX = event.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+// Improve touch targets for project cards
+projectCards.forEach((card) => {
+  card.style.minHeight = "240px";
+});
+
 // Simple front-end form messaging for local usage.
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");

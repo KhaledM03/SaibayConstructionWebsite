@@ -1,0 +1,537 @@
+/* =========================================================
+   How to Prepare for a Job in Tech — Stylesheet
+   Clean, modern, responsive. Beginner-friendly.
+   ========================================================= */
+
+/* ---------- Design tokens ---------- */
+:root {
+  --bg: #f7f8fb;
+  --bg-alt: #ffffff;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --accent: #2563eb;
+  --accent-soft: #dbeafe;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.06);
+  --radius: 14px;
+  --radius-lg: 22px;
+  --container: 1080px;
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  width: min(92%, var(--container));
+  margin-inline: auto;
+}
+
+.slide {
+  padding: clamp(3.5rem, 8vw, 6.5rem) 0;
+}
+
+.slide.alt {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------- Typography ---------- */
+h1,
+h2,
+h3 {
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-weight: 800;
+  margin: 0.6rem 0 1.4rem;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin: 0.4rem 0 1.2rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-muted);
+}
+
+p strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  font-size: 1.12rem;
+  max-width: 60ch;
+  margin-bottom: 2rem;
+}
+
+.body {
+  margin-bottom: 1rem;
+  max-width: 60ch;
+}
+
+.body.big {
+  font-size: 1.12rem;
+}
+
+/* ---------- Navigation ---------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo-mark {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding-top: clamp(3rem, 7vw, 5rem);
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.hero h1 {
+  letter-spacing: -0.03em;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  border: 1px solid transparent;
+  transition: transform 160ms ease-out, background-color 160ms ease-out,
+    box-shadow 160ms ease-out, border-color 160ms ease-out;
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-ghost {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.hero-meta strong {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* ---------- Main Points ---------- */
+.points-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.point-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 220ms ease-out, box-shadow 220ms ease-out;
+}
+
+.point-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.point-number {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.6rem;
+}
+
+.point-card h3 {
+  margin-bottom: 0.45rem;
+  font-size: 1.2rem;
+}
+
+/* ---------- Introduction ---------- */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+/* ---------- Step-by-Step ---------- */
+.steps {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  counter-reset: step;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.8rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 220ms ease-out, box-shadow 220ms ease-out,
+    border-color 220ms ease-out;
+}
+
+.step:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.step-num {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  align-self: start;
+  height: 60px;
+  width: 60px;
+}
+
+.step-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.step-body p {
+  margin-bottom: 0.9rem;
+}
+
+.step-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Image placeholder ---------- */
+.image-placeholder {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius);
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(37, 99, 235, 0.03) 0,
+      rgba(37, 99, 235, 0.03) 12px,
+      transparent 12px,
+      transparent 24px
+    ),
+    var(--bg);
+  color: var(--text-muted);
+  padding: 2.4rem 1.4rem;
+  min-height: 220px;
+  margin-top: 1rem;
+}
+
+.image-placeholder.small {
+  min-height: 150px;
+  padding: 1.4rem;
+  margin-top: 1rem;
+}
+
+.image-placeholder .ph-label {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.image-placeholder .ph-hint {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  max-width: 36ch;
+}
+
+/* ---------- Tips ---------- */
+.tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.tip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.3rem 1.4rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.tip-icon {
+  display: inline-block;
+  font-size: 1.35rem;
+  color: var(--accent);
+  margin-bottom: 0.45rem;
+}
+
+.tip h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.tip p {
+  font-size: 0.95rem;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  padding: 1.6rem 0;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-top {
+  font-weight: 600;
+}
+
+/* ---------- Scroll-reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 880px) {
+  .points-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 0.85rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .points-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1.3rem 1.2rem;
+  }
+
+  .step-num {
+    height: 48px;
+    width: 48px;
+    font-size: 1.05rem;
+  }
+
+  .hero-meta {
+    gap: 1rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ---------- Accessibility ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

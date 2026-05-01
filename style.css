@@ -10,7 +10,7 @@
   --shadow-soft: 0 20px 34px rgba(25, 24, 22, 0.08);
   --shadow-deep: 0 24px 44px rgba(25, 24, 22, 0.14);
   --radius: 2px;
-  --section-space: clamp(4rem, 8vw, 8rem);
+  --section-space: clamp(2.5rem, 5vw, 5rem);
 }
 
 * {
@@ -53,7 +53,7 @@ a {
 }
 
 .section-heading {
-  margin-bottom: clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(1.2rem, 3vw, 2rem);
 }
 
 .section-heading.left-align {
@@ -149,7 +149,7 @@ p {
 }
 
 .nav-wrap {
-  min-height: 76px;
+  min-height: 92px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -164,8 +164,8 @@ p {
 }
 
 .brand-logo {
-  width: 52px;
-  height: 52px;
+  width: 72px;
+  height: 72px;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.28);
 }
@@ -251,7 +251,7 @@ p {
 }
 
 .hero {
-  min-height: calc(100vh - 76px);
+  min-height: calc(100vh - 92px);
   display: grid;
   grid-template-columns: 60fr 40fr;
   position: relative;
@@ -747,24 +747,15 @@ p {
 }
 
 .lead-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 1rem;
   margin-bottom: 1.1rem;
   background: rgba(46, 74, 107, 0.08);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-soft);
-}
-
-.lead-card img {
-  height: 100%;
-  object-fit: cover;
+  padding: 1.6rem;
 }
 
 .lead-card > div {
-  padding: 1.2rem;
-  display: grid;
-  align-content: center;
+  max-width: 720px;
 }
 
 .lead-card h2 {
@@ -785,44 +776,35 @@ p {
   max-width: 36ch;
 }
 
+.lead-bio {
+  margin-top: 0.7rem;
+  font-size: 0.93rem;
+  line-height: 1.65;
+  max-width: 64ch;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
 }
 
-.flip-card {
-  min-height: 190px;
-  perspective: 1000px;
-  position: relative;
-}
-
-.flip-face {
-  position: absolute;
-  inset: 0;
+.bio-card {
   border: 1px solid var(--line);
   background: var(--white);
-  padding: 1rem;
-  display: grid;
-  align-content: center;
-  backface-visibility: hidden;
-  transition: transform 320ms ease;
+  padding: 1.2rem;
+  box-shadow: var(--shadow-soft);
 }
 
-.flip-face.front p {
-  margin-top: 0.35rem;
+.bio-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
 }
 
-.flip-face.back {
-  transform: rotateY(180deg);
-}
-
-.flip-card:hover .flip-face.front {
-  transform: rotateY(180deg);
-}
-
-.flip-card:hover .flip-face.back {
-  transform: rotateY(360deg);
+.bio-card .bio-text {
+  margin-top: 0.6rem;
+  font-size: 0.93rem;
+  line-height: 1.65;
 }
 
 .testimonials {

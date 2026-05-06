@@ -201,6 +201,13 @@ p {
   max-width: 600px;
 }
 
+.hero-logo {
+  width: clamp(72px, 9vw, 110px);
+  height: auto;
+  margin-bottom: 1.1rem;
+  border-radius: 6px;
+}
+
 .hero-content h1 {
   font-size: clamp(2.1rem, 3.6vw, 3.4rem);
   margin-bottom: 1.1rem;
